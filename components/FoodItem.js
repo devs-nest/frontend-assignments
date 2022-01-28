@@ -19,7 +19,7 @@ export const FoodItem = ({ foodItem, showFinalFrom }) => {
   return (
     <div className='relative'>
       {
-        checked && showFinalFrom && <FinalTaskElement width={800} title={title} imgUrl={imgUrl} />
+        checked && showFinalFrom && <FinalTaskElement title={title} imgUrl={imgUrl} />
       }
       <div className='flex items-center header_with_checkbox' >
         <h2>{title}</h2>

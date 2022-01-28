@@ -6,7 +6,7 @@ export const Order_Delivery = ({ showFinalFrom }) => {
     // 1365 × 663
     return (
         <div>
-            {checked && showFinalFrom && <FinalTaskElement title={'Order & Delivery'} imgUrl='./order_delivery.png' width={800} />}
+            {checked && showFinalFrom && <FinalTaskElement title={'Order & Delivery'} imgUrl='./order_delivery.png'/>}
             <div className='flex items-center justify-center'>
                 <h1>Order for Home-Delivered Smiles</h1>
                 {showFinalFrom && <>

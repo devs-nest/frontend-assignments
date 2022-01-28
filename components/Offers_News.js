@@ -5,7 +5,7 @@ export const Offers_News = ({ showFinalFrom }) => {
     const [checked, setChecked] = useState(false);
     return (
         <div>
-            {checked && showFinalFrom && <FinalTaskElement title={'Offers & News'} imgUrl='./offers_news.png' width={800} />}
+            {checked && showFinalFrom && <FinalTaskElement title={'Offers & News'} imgUrl='./offers_news.png'/>}
             <div className='flex items-center justify-center'>
                 <h1>Special Offers & News</h1>
                 {showFinalFrom && <>

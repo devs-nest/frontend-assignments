@@ -65,10 +65,17 @@
 .hover_element img {
 	transition: all 0.03s ease-in-out;
 	box-shadow: 0 0 50px #ccc;
+	width: 600px;
 }
 
 .hover_element img:hover {
 	transform: scale(1.02);
+}
+
+@media screen and (min-width: 700px) {
+	.hover_element img {
+		width: 800px;
+	}
 }
 
 /* Checkbox */
