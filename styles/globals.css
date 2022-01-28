@@ -28,6 +28,25 @@
 	transform: scale(1.08);
 }
 
+.toogle_button p {
+	font-size: 2.3rem;
+	text-align: center;
+	margin-top: 3px;
+	animation: updown 0.9s infinite ease-in-out;
+}
+@keyframes updown {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(15px);
+		/* transform: scale(5); */
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
 /* hover elemet */
 .hover_element {
 	display: flex;
