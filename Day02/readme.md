@@ -17,3 +17,8 @@
 - Task03 : Order & Delivered Section [🔗link](./index.html#L111-L129)
 - Task04 : offers & news Section [🔗link](./index.html#L131-L144)
 - Task05 : footer [🔗link](./index.html#L146-L162)
+
+## Meme Section :
+
+<img src='../assest/meme/web-designer-developer-jokes.jpg' width="400"/>
+

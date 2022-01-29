@@ -29,3 +29,7 @@
   - add image
   - add from
 - Footer Section
+
+## Meme Section :
+
+<img src='../assest/meme/when-people-dont-close-html-elements-meme.jpg' width="400"/>
