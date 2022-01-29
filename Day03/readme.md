@@ -32,4 +32,4 @@
 
 ## Meme Section :
 
-<img src='../assest/meme/when-people-dont-close-html-elements-meme.jpg' width="400"/>
+<img src='../assets/meme/when-people-dont-close-html-elements-meme.jpg' width="400"/>
