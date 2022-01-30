@@ -1,10 +1,10 @@
-# Day03: [🔗link](https://devs-nest.github.io/frontend-assignments/Day03/)
+# Day04: [🔗link](https://devs-nest.github.io/frontend-assignments/Day04/)
 
-### Topic : HTML : Tags, Semantics, Forms, tables, links, Images
+### Topic : HTML : Graphics, Media
 
 ### Tips :
 
-- Use video, audio tags
+- Use video, audio, svg tags
 - You can use your own creativity
 
 ### Assignments :
