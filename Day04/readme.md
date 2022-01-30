@@ -9,8 +9,11 @@
 
 ### Assignments :
 
-- More different data more complex to mannage. so first make a good folder structure.
-
+- Add a Video to the site [🔗link](https://www.youtube.com/watch?v=hN6hyvtL-Wc)
+- Add a Audio to the site [🔗link](https://www.youtube.com/watch?v=XvhDw5bQbd8)
+- Add a SVG circle.
+- More different data more complex to mannage. so First make a good folder structure.
+  According bellow.
 ```
   -- assests
       |-- audio           // all audio goes here
@@ -19,10 +22,6 @@
       |-- videos          // all videos goes here
   -- pages                // all subpages goes here
 ```
-
-- Add a Video to the site [🔗link](https://www.youtube.com/watch?v=hN6hyvtL-Wc)
-- Add a Audio to the site [🔗link](https://www.youtube.com/watch?v=XvhDw5bQbd8)
-- Add a SVG circle
 
 ## Meme Section :
 
