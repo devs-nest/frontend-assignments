@@ -1,0 +1,61 @@
+/* best practice */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* common styles start here */
+main,
+nav,
+footer {
+	margin: 0 20px;
+}
+
+h1,
+h2 {
+	margin-bottom: 10px;
+	padding: 5px 0;
+	border-bottom: #db0007 dotted 3px;
+}
+
+p {
+	margin: 5px 0;
+}
+/* common styles end here */
+
+/*food items section style start here */
+.food_item {
+	margin-bottom: 10px;
+}
+.food_item img {
+	border-left: darkgrey 5px solid;
+	border-right: darkgrey 5px solid;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+/*food items section style end here */
+
+/* Order & Delivered section style start here*/
+.delivery_platforms img {
+	margin-bottom: 10px;
+}
+/* Order & Delivered section style end here*/
+
+/*offers_news_section start here*/
+.offers_news_section form input {
+	padding: 5px 10px;
+}
+
+.offers_news_section form button {
+	padding: 5px 10px;
+}
+
+.social_icons input {
+	padding: 10px 2px;
+}
+
+.social_icons img {
+	margin-bottom: 10px;
+}
+/*offers_news_section end here*/
