@@ -27,6 +27,20 @@
 
 #
 
+## Some Recommendation For Smooth Dev Experience :
+
+### 1. Code Editor - [VScode](https://code.visualstudio.com/)
+
+### 2. Extension :
+
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [live-server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+### 3. Try to shift to Linux. (personal recommendation)
+
+#
+
 ![](./assets/meme/ie_meme.jpg)
 
 If You Understand this meme, After the Frontend course.
