@@ -1,0 +1,340 @@
+<html>
+	<head>
+		<title>
+			Day06 - CSS : Commnets, colors, box model, fonts, position, z-index
+		</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- External css start here -->
+		<link rel="stylesheet" href="./styles/style.css" />
+		<!-- External css end here -->
+
+		<!-- internal css start here -->
+		<style>
+			/* restaurant_locator table style start here */
+			#restaurant_locator_section {
+				margin: 0 20px 20px 20px;
+			}
+			#restaurant_locator_section table {
+				border-collapse: collapse;
+				width: 500px;
+			}
+
+			td,
+			th {
+				padding: 10px;
+				border: 1px solid #ccc;
+			}
+			/* Zebra striping */
+			tr:nth-of-type(odd) {
+				background: #eee;
+			}
+			/* restaurant_locator table style end here */
+
+			/*footer style here*/
+			footer {
+				margin-top: 10px;
+				margin-bottom: 15px;
+				border-top: 2px solid #b69a81;
+				padding-top: 20px;
+			}
+			/*footer style here*/
+		</style>
+		<!-- internal css end here -->
+	</head>
+	<body>
+		<!-- Section 1 : navbar start here -->
+		<nav
+			style="
+				border-bottom: 1px solid #db0007;
+				padding: 20px 10px;
+				margin-bottom: 10px;
+			"
+		>
+			<img src="./assets/images/logos/mc_logo.png" alt="" />
+			<ul style="padding: 10px 30px; margin-top: 10px">
+				<a href="./pages/menu.html">
+					<li>Menu</li>
+				</a>
+				<a href="./pages/happy_meal.html">
+					<li>Happy Meal</li>
+				</a>
+				<a href="./pages/restaurants.html">
+					<li>Restaurants</li>
+				</a>
+				<a href="./pages/news.html">
+					<li>News</li>
+				</a>
+			</ul>
+		</nav>
+		<!-- Section 1 : navbar end here -->
+
+		<main>
+			<!-- Section 2 : All FoodItems Section start here -->
+			<section class="food_items_section">
+				<!-- Section 2.1 : 1st FoodItem start here -->
+				<article class="food_item">
+					<h2>McAloo Tikki Burger®</h2>
+					<img src="./assets/images/mcaloo-tikki-cheese.png" alt="" />
+					<h4>The one that never goes out of flavour.</h4>
+					<p>
+						A golden fried vegetarian patty prepared with peas, potato and
+						infused with aromatic spices. Clubbed with sliced tomatoes, shredded
+						red onion, and tangy tomato mayonnaise. Served in a warm toasted
+						bun.
+					</p>
+					<p class="serving_size">Serving Size :</p>
+					<p>146 gm</p>
+					<p class="contains"><b>Allergen Warning! Contains: </b></p>
+					<p>Gluten, Milk and/or Milk products, Soybean derivatives</p>
+					<p><b>Calories</b></p>
+					<p>334 kCal</p>
+					<p><b>Protein</b></p>
+					<p>7gm</p>
+					<p><b>Fats</b></p>
+					<p>12gm</p>
+					<p><b>Carbs.</b></p>
+					<p>50gm</p>
+					<div class="ingredients">
+						<p class="ingredients_heading">Ingredients</p>
+						<p class="ingredients_text">
+							Regular bun crown, Tom-Mayo sauce, Sliced tomatoes, Shredded
+							onion, Aloo tikki patty, Regular bun heel
+						</p>
+					</div>
+				</article>
+				<!-- Section 2.1 :  1st FoodItem end here -->
+
+				<!-- Section 2.2 : 2nd FoodItem start here -->
+				<article class="food_item">
+					<h2>Dosa Masala Burger®</h2>
+					<img src="./assets/images/masala-dosa-burger.png" alt="" />
+					<h4>A new taste of India.</h4>
+					<p>
+						Turmeric-spiced mashed potato filling topped with fresh peas.
+						Grilled and placed inside a soft whole wheat bun with a spicy
+						molagapodi chutney mayo.
+					</p>
+					<p class="serving_size">Serving Size :</p>
+					<p>138 gm</p>
+					<p class="contains"><b>Allergen Warning! Contains: </b></p>
+					<p>Gluten, Milk and/or Milk products, Soybean derivatives</p>
+					<span>
+						<p><b>Calories</b></p>
+						<p>307 kCal</p>
+					</span>
+					<span>
+						<p><b>Protein</b></p>
+						<p>5.7gm</p>
+					</span>
+
+					<p><b>Fats</b></p>
+					<p>12.2gm</p>
+					<p><b>Carbs.</b></p>
+					<p>43.5gm</p>
+					<div class="ingredients">
+						<p class="ingredients_heading">Ingredients</p>
+						<p class="ingredients_text">
+							Whole wheat bun, Rasam mayo, Dosa masala aloo patty
+						</p>
+					</div>
+				</article>
+				<!-- Section 2.2 :  2nd FoodItem end here -->
+
+				<!-- Section 2.3 : 3nd FoodItem start here -->
+				<article class="food_item">
+					<h2>McVeggie®</h2>
+					<img src="./assets/images/mc-veggie-single.png" alt="" />
+					<h4>Pure taste. Pure veg.</h4>
+					<p>
+						A delectable patty made of green goodness, potatoes, peas, carrots
+						and a selection of Indian spices. Topped with crispy lettuce,
+						mayonnaise, and packed into sesame toasted buns.
+					</p>
+					<p class="serving_size">Serving Size :</p>
+					<p>169 gm</p>
+					<p class="contains"><b>Allergen Warning! Contains: </b></p>
+					<p>Gluten, Milk and/or Milk products, Soybean derivatives</p>
+					<p><b>Calories</b></p>
+					<p>386 kCal</p>
+					<p><b>Protein</b></p>
+					<p>9gm</p>
+					<p><b>Fats</b></p>
+					<p>14gm</p>
+					<p><b>Carbs.</b></p>
+					<p>56gm</p>
+					<div class="ingredients">
+						<p class="ingredients_heading">Ingredients</p>
+						<p class="ingredients_text">
+							Quarter bun crown, Veg mayonnaise, Shredded lettuce, Vegetable
+							patty, Quarter bun heel
+						</p>
+					</div>
+				</article>
+				<!-- Section 2.3 : 3nd FoodItem end here -->
+			</section>
+			<!-- Section 2 : All Fooditem section end here -->
+
+			<!-- Section 3 : Restaurant Locator start here -->
+			<section id="restaurant_locator_section">
+				<h2>Restaurant Locator</h2>
+				<!-- table start here -->
+				<table id="restaurant_locator_table">
+					<tr>
+						<th>Location</th>
+						<th>Dine-in</th>
+						<th>Delivery</th>
+						<th>Call</th>
+					</tr>
+					<tr>
+						<td>Kolkata</td>
+						<td>Open</td>
+						<td>Open</td>
+						<td>9821218811</td>
+					</tr>
+					<tr>
+						<td>Punjab</td>
+						<td>Open</td>
+						<td>Closed</td>
+						<td>7172712766</td>
+					</tr>
+					<tr>
+						<td>Delhi</td>
+						<td>Closed</td>
+						<td>Open</td>
+						<td>8262362301</td>
+					</tr>
+					<tr>
+						<td>Mumbai</td>
+						<td>Closed</td>
+						<td>Closed</td>
+						<td>9908888211</td>
+					</tr>
+				</table>
+				<!-- table end here -->
+			</section>
+			<!-- Section 3 : Restaurant Locator end here -->
+
+			<!-- Section 4 : Order & Delivered start here -->
+			<section class="oreder_delivered_section">
+				<h1>Order for Home-Delivered Smiles</h1>
+				<div>
+					<img
+						class="oreder_delivered_img"
+						src="./assets/images/mc-delivery.jpg"
+						alt=""
+					/>
+					<div>
+						<p class="subheading">We deliver to your doorstep</p>
+						<p>
+							McDelivery allows you to experience delicious McDonald's food from
+							the comfort of your sofa at home or cubicle in office. All orders
+							are delivered quickly and efficiently, allowing you the peace of
+							mind to know that smiles-inducing food is never too far.
+						</p>
+						<div class="order_now_btn">Order now</div>
+						<p class="now_also">Now also on:</p>
+						<div class="delivery_platforms">
+							<div>
+								<img src="./assets/images/logos/swiggy_logo.svg" alt="" />
+							</div>
+							<div>
+								<img src="./assets/images/logos/zomato_logo.svg" alt="" />
+							</div>
+							<div>
+								<img src="./assets/images/logos/magicping_logo.svg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Section 3 : Order & Delivered end here -->
+
+			<!-- Section 4 : offers & news start here -->
+			<section class="offers_news_section">
+				<div class="offers_news_section_bg">
+					<img src="./assets/images/subscribe-bg.jpg" alt="" />
+				</div>
+				<div class="offers_news_section_main">
+					<img src="./assets/images/offer_news.png" alt="" />
+					<div class="offers_news_section_contents">
+						<h1>Special Offers &amp; News</h1>
+						<p>
+							Subscribe now for news, promotions and more delivered right to
+							your inbox.
+						</p>
+
+						<!-- form start here -->
+						<form>
+							<input type="gamil" placeholder="Your Email" />
+							<button>Subscribe</button>
+						</form>
+						<!-- form end here -->
+
+						<p class="follow_text">Follow us on</p>
+						<div class="social_icons">
+							<div>
+								<a href="https://www.facebook.com">
+									<img src="./assets/images/logos/facebook_logo.svg" alt="" />
+								</a>
+							</div>
+							<div>
+								<a href="https://www.instagram.com/">
+									<img src="./assets/images/logos/instagram_logo.svg" alt="" />
+								</a>
+							</div>
+							<div>
+								<a href="https://www.youtube.com/">
+									<img src="./assets/images/logos/youtube_logo.svg" alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Section 4 : offers & news end here -->
+		</main>
+
+		<!-- Section 5 : footer start here -->
+		<footer>
+			<p>© 2020-21 McDonald's. All Rights Reserved.</p>
+			<p>
+				Connaught Plaza Restaurants Private Limited (licensee of McDonald's in
+				North &amp; East India)
+			</p>
+			<div class="footer_extra_links">
+				<a href=".">
+					<span>FAQ</span>
+				</a>
+				<span>&nbsp;|&nbsp;</span>
+				<a href=".">
+					<span>Terms &amp; Conditions</span>
+				</a>
+				<span>&nbsp;|&nbsp;</span>
+				<a href=".">
+					<span>Privacy Policy</span>
+				</a>
+				<span>&nbsp;|&nbsp;</span>
+				<a href=".">
+					<span>Feedback</span>
+				</a>
+				<span>&nbsp;|&nbsp;</span>
+				<a href=".">
+					<span>Careers</span>
+				</a>
+				<span>&nbsp;|&nbsp;</span>
+				<a href=".">
+					<span>Contact Us</span>
+				</a>
+			</div>
+			<div class="copyright_link">
+				<a href=""><img src="./assets/images/logos/mountains.svg" alt="" /></a>
+			</div>
+		</footer>
+		<!-- Section 5 : footer end here -->
+	</body>
+</html>

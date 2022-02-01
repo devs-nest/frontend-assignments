@@ -1,0 +1,254 @@
+/* yellow - #ffbc0d */
+/* red - #db0007 */
+/* yellogrey - #B69A81 */
+/* best practice */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* common styles start here */
+footer,
+section {
+	margin: 0 20px;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+p {
+	margin: 5px 0;
+}
+/* common styles end here */
+
+/* navbar styles start here */
+nav ul {
+	list-style-type: none;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: white;
+	background-color: #ffbc0d;
+	display: inline-block;
+	padding: 5px 8px;
+	font-size: 1.2rem;
+	border-radius: 2px;
+}
+/* navbar styles end here */
+
+/*food items section style start here */
+
+.food_item {
+	margin-bottom: 10px;
+	max-width: 1200px;
+	margin: 20px auto;
+	position: relative;
+}
+
+.food_item h2 {
+	position: relative;
+	font-size: 2rem;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+
+.food_item h2::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: calc(-70%);
+	width: 130%;
+	height: 100%;
+	background-color: #ffbc0d;
+	z-index: -1;
+	border-radius: 0 0 70px 0;
+}
+
+.food_item img {
+	margin-bottom: 10px;
+	border-radius: 5px;
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	right: 0;
+}
+
+.food_item h4 {
+	color: #b69a81;
+	font-weight: bold;
+	margin: 30px 0;
+}
+
+.serving_size {
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.contains {
+	margin-top: 20px;
+	color: #db0007;
+}
+
+.food_item .ingredients {
+	width: 270px;
+	background: rgba(255, 255, 255, 0.65);
+	padding: 20px;
+	border: 2px solid #cfcfcf;
+	border-radius: 5px;
+	/* position: absolute;
+	bottom: 0;
+	right: 0; */
+}
+
+.food_item .ingredients .ingredients_heading {
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.food_item .ingredients .ingredients_text {
+	color: #b69a81;
+}
+/*food items section style end here */
+
+/* Order & Delivered section style start here*/
+.oreder_delivered_section {
+	position: relative;
+}
+
+.oreder_delivered_section .oreder_delivered_img {
+	/* position: absolute; */
+	width: 50%;
+}
+
+.delivery_platforms img {
+	margin-bottom: 10px;
+}
+
+.subheading {
+	color: #b69a81;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.order_now_btn {
+	font-size: 16px;
+	padding: 20px 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 45px;
+	width: 255px;
+	background: #db0007;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	margin: 20px 0;
+}
+
+.now_also {
+	font-weight: bold;
+	font-size: 14px;
+}
+/* Order & Delivered section style end here*/
+
+/*offers_news_section start here*/
+.offers_news_section {
+	position: relative;
+}
+
+.offers_news_section_bg img {
+	width: 50%;
+}
+
+.offers_news_section_bg::before {
+	position: absolute;
+	content: '';
+	background-image: url('../assets/images/french_fries.png');
+	background-repeat: no-repeat;
+	width: 38%;
+	height: 38%;
+	top: 60%;
+	left: 10%;
+}
+
+.offers_news_section_main {
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	margin: auto 0;
+}
+
+.offers_news_section_main > img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -10;
+	width: 500px;
+}
+
+.offers_news_section_main form input {
+	font-size: 24px;
+	color: #000;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 45px;
+	outline: none;
+}
+
+.offers_news_section_main form button {
+	font-size: 16px;
+	padding: 20px 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 45px;
+	width: 255px;
+	background: #db0007;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	margin: 20px 0;
+	outline: none;
+	border: none;
+}
+.offers_news_section_main .follow_text {
+	font-weight: bold;
+}
+
+.social_icons input {
+	padding: 10px 2px;
+}
+
+.social_icons img {
+	margin-bottom: 10px;
+}
+/*offers_news_section end here*/
+
+/*footer start here*/
+footer .footer_extra_links a {
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+	margin-top: 2px;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+	color: #000;
+}
+
+.copyright_link img {
+	display: block;
+	height: 20px;
+	width: 45px;
+	margin-bottom: 5pxs;
+}
+/*footer end here*/
