@@ -150,17 +150,6 @@ nav ul a {
 	width: 50%;
 }
 
-.offers_news_section_bg::before {
-	position: absolute;
-	content: '';
-	background-image: url('../assets/images/french_fries.png');
-	background-repeat: no-repeat;
-	width: 38%;
-	height: 38%;
-	top: 60%;
-	left: 10%;
-}
-
 .offers_news_section_main {
 	position: absolute;
 	top: 0;
