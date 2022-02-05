@@ -1,0 +1,10 @@
+@import 'oldcssstyle';
+@import "navbar";
+@import "restaurant_locator";
+@import "order_delivery";
+@import "offers_news";
+@import "footer";
+
+html {
+  scroll-behavior: smooth;
+}

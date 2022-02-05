@@ -1,0 +1,25 @@
+.offers_news_section {
+
+  .offers_news_section_bg {
+    position: relative;
+
+    &:after {
+      content: "";
+      background: url("../assets/images/french_fries.png") no-repeat;
+      position: absolute;
+      left: 10%;
+      width: 50%;
+      height: 200px;
+      bottom: 0;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    transition: all 0.07s ease-in-out;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}

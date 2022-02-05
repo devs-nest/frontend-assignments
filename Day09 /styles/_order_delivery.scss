@@ -1,0 +1,29 @@
+.oreder_delivered_section {
+  .oreder_delivered_section_contents {
+    position: relative;
+    border-radius: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: url("../assets/images/melting-cheese-2.svg") no-repeat;
+      width: 100%;
+      height: 40px;
+      top: 0;
+      right: -20%;
+    }
+
+    .order_now_btn {
+      cursor: pointer;
+      transition: all 0.07s ease-in-out;
+
+      &:hover {
+        background-color: black;
+      }
+    }
+
+    .now_also_section_images img {
+      cursor: pointer;
+    }
+  }
+}

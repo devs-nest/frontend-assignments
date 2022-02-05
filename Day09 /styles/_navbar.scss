@@ -1,0 +1,30 @@
+nav {
+  position: fixed;
+  z-index: 100;
+
+  ul a {
+    position: relative;
+    text-align: center;
+    transition: all 0.07s ease-in-out;
+
+    &:hover:after {
+      content: "";
+      position: absolute;
+      width: calc(100%);
+      left: 0;
+      bottom: -10px;
+      height: 1px;
+      background: #ffbb0f;
+      animation: slide 0.3s ease-in-out;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
