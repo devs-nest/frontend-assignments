@@ -18,4 +18,4 @@
 ## Meme Section :
 
 <img src='../assets/meme/css_meme.png' width="400"/>
-<img src='../assets/meme/its-a-frontend-is-it-3oth-its-both-backend.webp' width="400"/>
+
