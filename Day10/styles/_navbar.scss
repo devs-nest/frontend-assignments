@@ -1,0 +1,85 @@
+nav {
+	position: fixed;
+	z-index: 100;
+	ul a {
+		position: relative;
+		text-align: center;
+
+		&:hover:after {
+			content: '';
+			position: absolute;
+			width: calc(100%);
+			left: 0;
+			bottom: -10px;
+			height: 1px;
+			background: #ffbb0f;
+			transition: all 0.07s ease-in-out;
+			animation: slide 0.3s ease-in-out;
+		}
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#menu-toggle {
+		display: none;
+	}
+
+	.menu-button-container {
+		img {
+			display: none;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.menu-button-container {
+			img {
+				display: block;
+			}
+		}
+
+		.menu {
+			position: absolute;
+			top: 70px;
+			left: 0;
+			flex-direction: column;
+			width: 100%;
+			justify-content: left;
+			align-items: center;
+			background-color: white;
+			padding-bottom: 10px;
+
+			a {
+				padding: 10px 0;
+				width: 100%;
+				margin: 0 !important;
+				color: #444444;
+
+				&:hover:after {
+					display: none;
+				}
+			}
+		}
+
+		#menu-toggle ~ .menu {
+			visibility: hidden;
+		}
+
+		#menu-toggle:checked {
+			& ~ .menu {
+				visibility: visible;
+			}
+		}
+	}
+}
+
+@keyframes slide {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}

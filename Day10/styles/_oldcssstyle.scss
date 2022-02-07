@@ -1,0 +1,517 @@
+/* best practice */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* common styles start here */
+nav,
+footer,
+section {
+	margin: 0 15px;
+}
+
+main {
+	/* max-width: 1600px; */
+	margin: 0 auto;
+}
+
+p {
+	margin: 5px 0;
+}
+
+/* common styles end here */
+
+/* navbar styles start here */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 3px 60px #0000000f;
+	height: 70px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	padding: 5px 8px;
+	font-size: 1rem;
+	border-radius: 2px;
+	margin-left: 10px;
+}
+
+/* navbar styles end here */
+
+/*food items section style start here */
+
+.food_item {
+	/* max-width: 1600px; */
+	margin: 20px auto;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1.4fr repeat(2, 1fr);
+}
+
+.food_item_contents {
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.food_item_contents h2 {
+	position: relative;
+	font-size: 2rem;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+
+.food_item_contents img {
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	right: 0;
+	user-select: none;
+	width: 600px;
+}
+
+.food_item_contents h4 {
+	color: #b69a81;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.serving_subtext {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.serving_subtext_heading {
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.food_item_contents .contains {
+	margin-top: 20px;
+	color: #db0007;
+}
+
+.nutrition_contents {
+	display: flex;
+	background-color: rgb(219, 0, 7);
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	padding: 8px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+	position: relative;
+	width: fit-content;
+	box-shadow: 0 3px 40px rgba(97, 0, 3, 0.1);
+}
+
+.nutrition_contents_subtext {
+	padding: 0 20px;
+	position: relative;
+}
+
+.nutrition_contents_subtext_heading {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.nutrition_contents_subtext_value {
+	font-weight: 700;
+}
+
+.food_item .ingredients {
+	width: 270px;
+	background: rgba(255, 255, 255, 0.65);
+	padding: 30px;
+	border-radius: 5px;
+	grid-area: 1 / 3 / 2 / 4;
+	height: fit-content;
+	box-shadow: 0 3px 60px #0000000f;
+	justify-self: end;
+}
+
+.food_item .ingredients .ingredients_heading {
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.food_item .ingredients .ingredients_text {
+	color: #b69a81;
+}
+
+/*food items section style end here */
+
+/* Order & Delivered section style start here*/
+
+.oreder_delivered_section {
+	display: flex;
+	flex-flow: row-reverse;
+	background-color: #ffbb0f;
+	margin: 0px !important;
+}
+
+.oreder_delivered_section_image {
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.oreder_delivered_section_image img {
+	width: 100%;
+}
+
+.oreder_delivered_section_contents {
+	background-color: #fff;
+	width: 50%;
+	margin-top: 80px;
+	padding: 80px 50px 80px 20px;
+	border-radius: 20px 20px 0 0;
+}
+
+.oreder_delivered_section_heading_image {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.oreder_delivered_section_contents h1 {
+	font-size: 44px;
+	margin: 30px 0;
+	font-weight: bold;
+}
+
+.subheading {
+	color: #b69a81;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.order_now_btn {
+	font-size: 16px;
+	padding: 20px 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 45px;
+	width: 255px;
+	background: #db0007;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	margin: 20px 0;
+	box-shadow: 0 3px 40px rgba(97, 0, 3, 0.1);
+}
+
+.now_also_section {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 30px;
+}
+
+.now_also_section_heading {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.now_also_section_images img {
+	margin-left: 10px;
+	user-select: none;
+}
+
+/* Order & Delivered section style end here*/
+
+/*offers_news_section start here*/
+.offers_news_section {
+	position: relative;
+}
+
+.offers_news_section_bg img {
+	width: 50%;
+}
+
+.offers_news_section_main {
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.offers_news_section_main > img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -10;
+	width: 500px;
+}
+
+.offers_news_section_contents h1 {
+	font-size: 3rem;
+}
+
+.offers_news_section_main form input {
+	font-size: 24px;
+	color: #000;
+	border: none;
+	padding: 15px 20px;
+	border-radius: 45px;
+	outline: none;
+}
+
+.offers_news_section_main form button {
+	font-size: 16px;
+	padding: 20px 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 45px;
+	width: 255px;
+	background: #db0007;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	margin: 20px 0;
+	outline: none;
+	border: none;
+	box-shadow: 0 3px 40px rgba(97, 0, 3, 0.1);
+}
+
+.follow_now_section {
+	display: flex;
+}
+
+.follow_text {
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.social_icons a {
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.social_icons input {
+	padding: 10px 2px;
+}
+
+.social_icons img {
+	margin-bottom: 10px;
+}
+
+/*offers_news_section end here*/
+
+/*footer start here*/
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer .footer_extra_links a {
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+	margin-top: 2px;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+	color: #000;
+}
+
+.copyright_link img {
+	display: block;
+	height: 20px;
+	width: 45px;
+	margin-bottom: 5px;
+}
+
+/*footer end here*/
+
+/** Day 09 New CSS **/
+
+body {
+	cursor: url('../assets/images/mc-cursor.png'), auto;
+}
+
+/* scrollbar start here */
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	background: #fff;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #db0007;
+}
+
+/* scrollbar end here */
+
+/* nav bar start here */
+nav {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	padding: 0 20px;
+	margin: 0 !important;
+	backdrop-filter: blur(2px);
+}
+
+/* nav bar end here */
+
+/* New Hero Section start here*/
+.new_hero_section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #ffbb0f;
+	color: #db0007;
+	font-size: 2.2rem;
+	font-weight: 800;
+	margin: 0 !important;
+	position: relative;
+}
+
+.new_hero_section_content {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+.new_hero_section_content span {
+	color: transparent;
+	-webkit-text-stroke: #db0007;
+	-webkit-text-stroke-width: 2px;
+	font-size: 3.5rem;
+}
+
+.new_hero_section_image {
+	position: relative;
+}
+
+.gradient_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	top: 0;
+	background: linear-gradient(
+		180deg,
+		rgba(219, 0, 7, 0.3) 0%,
+		rgba(203, 212, 214, 0.2) 50%,
+		rgba(203, 212, 214, 0.1) 100%
+	);
+}
+
+.new_hero_section_image img {
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+}
+
+/** down arrow **/
+.new_hero_section .down_arrow {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+}
+
+.down_arrow svg {
+	width: 35px;
+	fill: #db0007;
+	animation-name: bounce;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	/* animation: bounce 1s infinite ease-in-out; */
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* New Hero Section end here*/
+
+/*offers_news_section start here*/
+
+.follow_text {
+	/* animation: movetext 3s infinite ease-in-out; */
+	animation-name: movetext;
+	animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes movetext {
+	0% {
+		transform: translateX(0px);
+	}
+	30% {
+		transform: translateX(10px);
+	}
+	50% {
+		transform: translateX(0px);
+	}
+	80% {
+		transform: translateX(-10px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+.social_icons a {
+	display: inline-block;
+	animation: rotate 3s infinite ease-in-out;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	30% {
+		transform: rotate(40deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+/*offers_news_section end here*/
