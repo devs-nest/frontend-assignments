@@ -5,6 +5,7 @@
 ### Tips :
 
 - breakpoints - 0 to 768px and 768px to max
+- add `<meta name="viewport" content="width=device-width, initial-scale=1.0" />` in head tag
 
 ### Assignments :
 
@@ -17,3 +18,4 @@
 ## Meme Section :
 
 <img src='../assets/meme/css_meme.png' width="400"/>
+<img src='../assets/meme/its-a-frontend-is-it-3oth-its-both-backend.webp' width="400"/>
