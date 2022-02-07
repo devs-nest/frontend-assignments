@@ -38,4 +38,4 @@
 
 ## Meme Section :
 
-<img src='../assets/meme/its-a-frontend-is-it-3oth-its-both-backend.webp' width="400"/>
+<img src='../assets/meme/D0J3DgmWoAAnw0h.jpg' width="400"/>
