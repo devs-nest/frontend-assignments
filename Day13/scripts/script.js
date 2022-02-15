@@ -76,8 +76,8 @@ class MinesweeperUI extends Minesweeper {
 	}
 }
 
-const BOARD_SIZE = 4
-const NUMBER_OF_MINUS = 1
+const BOARD_SIZE = 10
+const NUMBER_OF_MINUS = 50
 
 const boardElement = document.querySelector('.board')
 const mineLeftCountElement = document.querySelector('[data-mine-count]')
