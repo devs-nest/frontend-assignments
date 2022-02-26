@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #81a1c1;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="input" placeholder="Your message..." />
+    <button onclick="message(document.getElementById('input').value)">
+      Send
+    </button>
+    <div id="messages"></div>
+    <script>
+      function poll() {
+        fetch("/poll")
+          .then((res) => res.text())
+          .then(
+            (message) =>
+              (document.getElementById(
+                "messages"
+              ).innerHTML += `${message} <br>`)
+          )
+          .finally(() => poll());
+      }
+      function message(message) {
+        fetch("/message", {
+          method: "POST",
+          body: message,
+        });
+      }
+      poll();
+    </script>
+  </body>
+</html>

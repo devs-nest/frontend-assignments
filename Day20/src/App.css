@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  height: 100vh;
+}
+.App {
+  text-align: center;
+}
+
+.Calculator {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
