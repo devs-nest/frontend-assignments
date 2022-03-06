@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom";
 import "./App.css";
 import Maths from "./components/Calculator";
 
@@ -15,3 +17,4 @@ function App() {
 }
 
 export default App;
+ReactDOM.render(React.createElement(App), document.getElementById("root"));
