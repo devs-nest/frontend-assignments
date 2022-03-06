@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+.calculator {
+  /* Size and Position */
+  height: 50vh;
+  width: 50vh;
+  min-width: 300px;
+  min-height: 500px;
+  padding: 10px;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  /* Design */
+  background: rgba(255, 255, 255, 0.25);
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px black;
+}
+
+.calculator-display {
+  /* Size & position */
+  height: 100px;
+  padding: 0px 10px;
+
+  /* Layout */
+  text-align: right;
+  font-size: 50px;
+  line-height: 100px;
+
+  /* Design */
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.calculator-buttons {
+  /* Size */
+  flex: 1;
+  margin: 0px;
+
+  /* Layout */
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 5px;
+}
+
+.calculator-button {
+  /* Size */
+  height: 100%;
+  width: 100%;
+
+  /* Layout */
+  text-align: center;
+
+  /* Design*/
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 30px;
+  background-color: white;
+}
+.calculator-number-button {
+  background-color: lightskyblue;
+}
+
+.calculator-equal-button {
+  background-color: lightgreen;
+}
+
+.calculator-operation-button {
+  background-color: lightsalmon;
+}
+
+.calculator-clear-button {
+  background-color: lightcoral;
+}
+.span-two {
+  grid-row: 5;
+  grid-column: 3 / 5;
+}
+
+.conditional {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.conditional p {
+  margin-left: 0;
+}
+.conditional button {
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.Lifting {
+  position: fixed;
+  background: linear-gradient(#338fa7, #cccccc);
+  border-radius: 1rem;
+  padding: 1%;
+  top: 50%;
+  left: 5%;
+  font-family: 'JetBrains Mono', monospace;;
+  font-size: 1rem;
+}
+
+/* .Lifting */
