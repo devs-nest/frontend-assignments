@@ -1,9 +1,18 @@
-import React from 'react'
-import './cart-item.styles.scss'
+import React from "react";
+import "./cart-item.styles.scss";
 
-const CartItem = ({
+interface Props {
+  item: {
+    imageUrl: string;
+    price: number;
+    name: string;
+    quantity: number;
+  };
+}
+
+const CartItem: React.FC = ({
   item: { imageUrl, price, name, quantity }
-}) => (
+}: Props) => (
   <div className="cart-item">
     <img src={imageUrl} alt="" />
     <div className="item-details">
@@ -13,6 +22,6 @@ const CartItem = ({
       </span>
     </div>
   </div>
-)
+);
 
-export default React.memo(CartItem)
+export default React.memo(CartItem);

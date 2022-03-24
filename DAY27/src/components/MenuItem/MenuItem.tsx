@@ -4,21 +4,24 @@ import { RouteComponentProps, withRouter } from "react-router-dom";
 
 import React from "react";
 
-type IProps = {
+type Props = {
   title: string;
   imageUrl: string;
-  size?: string;
+  size: string;
+  history: RouteComponentProps["history"];
+  id: number;
+  match: RouteComponentProps["match"];
   linkUrl: string;
 };
 
-const MenuItem: React.FC<RouteComponentProps & IProps> = ({
+const MenuItem: React.FC = ({
   title,
   imageUrl,
   size,
   history,
   linkUrl,
   match
-}) => (
+}: Props) => (
   <a className={`${size} menu-item`} href={`${match.url}${linkUrl}`}>
     <div className="bg-image" style={{ backgroundImage: `url(${imageUrl})` }} />
     <div className="content">

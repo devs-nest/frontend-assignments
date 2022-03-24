@@ -1,22 +1,22 @@
-import './directory.styles.scss'
+import "./directory.styles.scss";
 
-import MenuItem from '../MenuItem'
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { connect } from 'react-redux'
-import { createStructuredSelector } from 'reselect'
-import { selectDirectorySections } from '../../redux/directory/directory.selector'
+import MenuItem from "../MenuItem";
+import React from "react";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectDirectorySections } from "../../redux/directory/directory.selector";
 
 type SectionItem = {
-  title: string
-  imageUrl: string
-  id: number
-  linkUrl: string
-}
+  title: string;
+  imageUrl: string;
+  id: number;
+  linkUrl: string;
+};
 
 type Props = {
-  sections?: SectionItem[]
-}
+  sections?: SectionItem[];
+};
 
 const Directory: React.FC<Props> = ({ sections }) => {
   return (
@@ -33,11 +33,11 @@ const Directory: React.FC<Props> = ({ sections }) => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 const mapStateToProps = createStructuredSelector({
   sections: selectDirectorySections
-})
+});
 
-export default connect(mapStateToProps, null)(Directory)
+export default connect(mapStateToProps, null)(Directory);

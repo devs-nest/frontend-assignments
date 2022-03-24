@@ -3,18 +3,18 @@ import { createSelector } from 'reselect'
 const collectionsData = (state) => state.shop
 
 export const selectCollections = createSelector(
-  [ collectionsData ],
+  [collectionsData],
   (shop) => shop.collections
 )
 
 export const selectSelectionsForPreview = createSelector(
-  [ selectCollections ],
-  (collections) =>
+  [selectCollections],
+  (collections: object) =>
     Object.keys(collections).map((key) => collections[key])
 )
 
-export const selectCollection = (urlParam) =>
+export const selectCollection = (urlParam: string | number) =>
   createSelector(
-    [ selectCollections ],
-    (collections) => collections[urlParam]
+    [selectCollections],
+    (collections: { [x: string]: any }) => collections[urlParam]
   )

@@ -1,25 +1,22 @@
-import './preview-component.styles.scss'
+import "./preview-component.styles.scss";
 
-import CollectionItem from '../CollectionItem'
-import React from 'react'
+import CollectionItem from "../CollectionItem";
+import React from "react";
 
 interface Item {
-  id: number
-  name: string
-  imageUrl: string
-  price: number
+  id: number;
+  name: string;
+  imageUrl: string;
+  price: number;
 }
 
 interface IProps {
-  title: string
-  routeName: string
-  items: Item[]
+  title: string;
+  routeName: string;
+  items: Item[];
 }
 
-const PreviewCollection: React.FC<IProps> = ({
-  title,
-  items
-}) => (
+const PreviewCollection: React.FC<IProps> = ({ title, items }) => (
   <div className="collection-preview">
     <h1>{title}</h1>
     <div className="preview">
@@ -30,6 +27,6 @@ const PreviewCollection: React.FC<IProps> = ({
         ))}
     </div>
   </div>
-)
+);
 
-export default PreviewCollection
+export default PreviewCollection;
