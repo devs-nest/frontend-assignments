@@ -1,16 +1,21 @@
-import { Link } from 'react-router-dom'
-import { ReactComponent as Logo } from '../../assets/value.svg'
-import './header.styles.scss'
-import React, { Fragment } from 'react'
-import { auth } from '../../firebase/firebase.utils'
-import { connect } from 'react-redux'
-import CartIcon from '../CartIcon'
-import CartDropdown from '../CartDropdown'
-import { createStructuredSelector } from 'reselect'
-import { selectCartHidden } from '../../redux/cart/cart.selectors'
-import { selectCurrentUser } from '../../redux/user/user.selectors'
+import { Link } from "react-router-dom";
+import { ReactComponent as Logo } from "../../assets/value.svg";
+import "./header.styles.scss";
+import React, { Fragment } from "react";
+import { auth } from "../../firebase/firebase.utils";
+import { connect } from "react-redux";
+import CartIcon from "../CartIcon";
+import CartDropdown from "../CartDropdown";
+import { createStructuredSelector } from "reselect";
+import { selectCartHidden } from "../../redux/cart/cart.selectors";
+import { selectCurrentUser } from "../../redux/user/user.selectors";
 
-const Header = ({ currentUser, hidden }) => {
+interface Props {
+  currentUser: any;
+  hidden: boolean;
+}
+
+const Header = ({ currentUser, hidden }: Props) => {
   return (
     <div className="header">
       <Link to="/">
@@ -25,10 +30,7 @@ const Header = ({ currentUser, hidden }) => {
         </Link>
         {currentUser ? (
           <Fragment>
-            <div
-              className="option"
-              onClick={() => auth.signOut()}
-            >
+            <div className="option" onClick={() => auth.signOut()}>
               SIGN OUT
             </div>
           </Fragment>
@@ -41,12 +43,12 @@ const Header = ({ currentUser, hidden }) => {
       </div>
       {hidden ? null : <CartDropdown />}
     </div>
-  )
-}
+  );
+};
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
   hidden: selectCartHidden
-})
+});
 
-export default connect(mapStateToProps)(Header)
+export default connect(mapStateToProps)(Header);

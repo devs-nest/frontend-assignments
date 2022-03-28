@@ -1,38 +1,35 @@
-import React, { useState } from 'react'
-import FormInput from '../FormInput'
-import CustomButton from '../CustomButton'
-import './sign-in.styles.scss'
-import {
-  signInWithGoogle,
-  auth
-} from '../../firebase/firebase.utils'
+import React, { useState } from "react";
+import FormInput from "../FormInput";
+import CustomButton from "../CustomButton";
+import "./sign-in.styles.scss";
+import { signInWithGoogle, auth } from "../../firebase/firebase.utils";
 
 const SignIn = () => {
-  const [ userCredentials, setCredentials ] = useState({
-    email: '',
-    password: ''
-  })
+  const [userCredentials, setCredentials] = useState({
+    email: "",
+    password: ""
+  });
 
   const handleChange = (event: any) => {
-    const { value, name } = event.target
+    const { value, name } = event.target;
 
-    setCredentials({ ...userCredentials, [name]: value })
-  }
+    setCredentials({ ...userCredentials, [name]: value });
+  };
 
-  const handleSubmit = async (event: any) => {
-    event.preventDefault()
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-    const { email, password } = userCredentials
+    const { email, password } = userCredentials;
 
     try {
-      await auth.signInWithEmailAndPassword(email, password)
-      setCredentials({ email: '', password: '' })
+      await auth.signInWithEmailAndPassword(email, password);
+      setCredentials({ email: "", password: "" });
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  }
+  };
 
-  const { email, password } = userCredentials
+  const { email, password } = userCredentials;
 
   return (
     <div className="sign-in">
@@ -59,16 +56,13 @@ const SignIn = () => {
         <div className="buttons">
           <CustomButton type="submit">Sign in</CustomButton>
 
-          <CustomButton
-            onClick={signInWithGoogle}
-            isGoogleSignIn
-          >
+          <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
             Sign in with Google
           </CustomButton>
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default SignIn
+export default SignIn;
