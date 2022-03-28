@@ -42,7 +42,7 @@ const INITIAL_STATE = {
 
 const directoryReducer = (
   state = INITIAL_STATE,
-  action
+  action: { type: string }
 ) => {
   switch (action.type) {
     default:

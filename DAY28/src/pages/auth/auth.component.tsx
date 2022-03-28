@@ -1,15 +1,19 @@
-import React from 'react'
-import SignIn from '../../components/SignIn'
-import SignUp from '../../components/SignUp'
+import React from "react";
+import SignIn from "../../components/SignIn";
+import SignUp from "../../components/SignUp";
 
-import './auth.styles.scss'
+import "./auth.styles.scss";
 
-const Auth = () => {
+interface IProps {
+  isSignIn: boolean;
+}
+
+const Auth: React.FC<IProps> = () => {
   return (
     <div className="auth">
       <SignIn />
       <SignUp />
     </div>
-  )
-}
-export default Auth
+  );
+};
+export default Auth;
